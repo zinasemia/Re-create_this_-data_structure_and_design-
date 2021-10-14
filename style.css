@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+
+body {
+    background-color: #F2EFEA;
+}
+
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-right: -20px;
+    font-family: Scheherazade New;
+    font-size: 1em;
+}
+
+nav ul a {
+    color: #602C1E;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    background-color: #602C1E;
+    color: white;
+
+}
+
+ul li::after {
+    content: " / ";
+}
+
+h1 {
+    width: max-content;
+    background-color: #19120C;
+    font-family: Ubuntu;
+    color: white;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: Scheherazade New;
+}
+
+
+
+.brand {
+    font-size: 1em;
+    font-family: Ubuntu;
+}
+
+.brandname {
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    font-size: 1.8em;
+    color: #BFBFBF;
+    text-align: left;
+    letter-spacing: 0.1em;
+    font-family: Scheherazade New;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid black 2px;
+    background-color: white;
+    width: 20vw;
+    height: fit-content;
+}
+
+.bikeimg img {
+    width: 20vw;
+    height: 20vw;
+}
+
+.ollist {
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    color: #BFBFBF;
+    list-style: none;
+    border: #BFBFBF solid 1px;
+}
+
+.ollist li {
+    margin-bottom: 10px;
+    font-family: Ubuntu;
+    border-bottom: #BFBFBF solid 1px;
+}
+
+.button {
+
+    align-self: center;
+    font-family: Ubuntu;
+    font-size: 2em;
+    color: #602C1E;
+
+}
+
+.button h5 {
+    padding: 10px;
+    width: max-content;
+    text-align: center;
+    border: #602C1E solid 2px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .card {
+        width: 40vw;
+        height: max-content;
+    }
+
+    .brand {
+        font-size: 0.8em;
+    }
+
+    .brandname,
+    .button {
+        font-size: 1.2em;
+
+    }
+
+    .bikeimg img {
+        width: 40vw;
+    }
+
+}
