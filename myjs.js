@@ -13,14 +13,14 @@ function showbike(bike) {
   const myClone = templateElement.cloneNode(true);
 
   //Step 3: Change the content
-
-  myClone.querySelector(".brandname").textContent = bike.brandname;
-  myClone.querySelector("#price").textContent = bike.price;
-  myClone.querySelector("#color").textContent = bike.color;
-  myClone.querySelector("#stock").textContent = bike.stock;
   myClone.querySelector(".bikeimg").src = "https://fullmind.eu/wpv2…36rvCeqng-unsplash-1.jpg";
-  //...
+  myClone.querySelector(".brand").textContent = `${bike.brand}`;
+  myClone.querySelector(".brandname").textContent = `${bike.brandname}`;
+  myClone.querySelector("#price").textContent = `${bike.price}` ;
+  myClone.querySelector("#color").textContent = `${bike.color}`;
+  myClone.querySelector("#stock").textContent =  `${bike.stock}`;
 
+  //
   const parent = document.querySelector("main");
   parent.appendChild(myClone);
 
