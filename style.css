@@ -18,7 +18,7 @@ nav ul {
     align-items: baseline;
     gap: 10px;
     flex-wrap: nowrap;
-    cursor: pointer;
+
 }
 
 nav ul li {
@@ -26,9 +26,10 @@ nav ul li {
     margin-right: -20px;
     font-family: Scheherazade New;
     font-size: 1em;
+    color: #602C1E;
 }
 
-nav ul a {
+/* nav ul a {
     color: #602C1E;
     text-decoration: none;
 }
@@ -37,7 +38,7 @@ nav ul a:hover {
     background-color: #602C1E;
     color: white;
 
-}
+} */
 
 ul li::after {
     content: " / ";
@@ -126,9 +127,14 @@ h2 {
     cursor: pointer;
 }
 
+p {text-align: center;
+    font-size: 0.8em;
+    font-family: ubuntu;
+}
+
 @media only screen and (max-width: 600px) {
     .card {
-        width: 40vw;
+        width: fit-content;
         height: max-content;
     }
 
@@ -143,7 +149,7 @@ h2 {
     }
 
     .bikeimg img {
-        width: 40vw;
+        width: fit-content;
     }
 
 }
