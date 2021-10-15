@@ -1,0 +1,14 @@
+my enemy in this assignment: Time...
+
+I am not really satisfied with my page, there are three main issues I had: 
+
+1. In wp I only fetaured the same media, so therefore it was clear it will show the same img but when adding the content for the clone, I struggled with writing something like this:
+ myClone.querySelector("img").src = `${bike.fetaured_media)`; so then in the end I just add the link to the image in the source, so if I had actually different kind of images I could have not do that.
+
+2. I would have liked to filter the products when clicking on one of the brands in the list in the header.
+but I have struggled with finding the right url parameters to filer after brands, so that when I create a new js files for the new pages, I could write smth. like this:
+fetch("https://fullmind.eu/wpv2/wp-json/wp/v2/bike?_fields=brand=Linus)
+
+3. I could not find a smart way to show the color or show the name of the color when fetching the color in js so on the page it shows the color code, I have a feeling if I change the property textcontent to something else it might work
+myClone.querySelector(".color").textContent = "Color: " + `${bike.colors}`; to sm
+
