@@ -2,7 +2,7 @@
     .then(function (response) {
       return response.json();
     })
-    .then(showbike);
+    .then(bikes => bikes.forEach(showbike))
 
 
   function showbike(bike) {
@@ -15,15 +15,16 @@
     const myClone = templateElement.cloneNode(true);
 
     //Step 3: Change the content
-    myClone.querySelector(".bikeimg").src = "https://fullmind.eu/wpv2…36rvCeqng-unsplash-1.jpg";
+    myClone.querySelector("img").src = "https://fullmind.eu/wpv2/wp-content/uploads/2021/10/robert-bye-tG36rvCeqng-unsplash-150x150.jpg";
     myClone.querySelector(".brand").textContent = `${bike.brand}`;
     myClone.querySelector(".brandname").textContent = `${bike.brandname}`;
-    myClone.querySelector("#price").textContent = `${bike.price}`;
-    myClone.querySelector("#color").textContent = `${bike.color}`;
-    myClone.querySelector("#stock").textContent = `${bike.stock}`;
+    myClone.querySelector(".price").textContent = "Price: " + `${bike.price}` + " dkk";
+    myClone.querySelector(".color").textContent = "Color: " + `${bike.colors}`;
+    myClone.querySelector(".stock").textContent = "In stock: " + `${bike.in_stock}`;
 
     //
-    const parent = document.querySelector("main");
+    const parent = document.querySelector(".shop");
     parent.appendChild(myClone);
 
+  
   }
