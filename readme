@@ -10,5 +10,5 @@ but I have struggled with finding the right url parameters to filer after brands
 fetch("https://fullmind.eu/wpv2/wp-json/wp/v2/bike?_fields=brand=Linus)
 
 3. I could not find a smart way to show the color or show the name of the color when fetching the color in js so on the page it shows the color code, I have a feeling if I change the property textcontent to something else it might work
-myClone.querySelector(".color").textContent = "Color: " + `${bike.colors}`; to sm
+myClone.querySelector(".color").textContent = "Color: " + `${bike.colors}`; 
 
